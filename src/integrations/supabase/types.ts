@@ -14,7 +14,39 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      pilates_leads: {
+        Row: {
+          created_at: string
+          current_weight: number
+          diet_preference: string
+          goal_weight: number
+          height: number
+          id: string
+          name: string
+          phone: string
+        }
+        Insert: {
+          created_at?: string
+          current_weight: number
+          diet_preference: string
+          goal_weight: number
+          height: number
+          id?: string
+          name: string
+          phone: string
+        }
+        Update: {
+          created_at?: string
+          current_weight?: number
+          diet_preference?: string
+          goal_weight?: number
+          height?: number
+          id?: string
+          name?: string
+          phone?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never

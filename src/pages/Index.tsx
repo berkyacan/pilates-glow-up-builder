@@ -7,10 +7,14 @@ import { FormStep } from "@/components/FormStep";
 import { ProgressBar } from "@/components/ProgressBar";
 import { FormData, dietOptions } from "@/types/form";
 import { Card } from "@/components/ui/card";
+import { supabase } from "@/integrations/supabase/client";
+import { useToast } from "@/hooks/use-toast";
 
 const Index = () => {
   const navigate = useNavigate();
+  const { toast } = useToast();
   const [currentStep, setCurrentStep] = useState(0);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState<FormData>({
     name: "",
     phone: "",
@@ -26,11 +30,48 @@ const Index = () => {
     setFormData(prev => ({ ...prev, [field]: value }));
   };
 
-  const handleNext = () => {
+  const handleNext = async () => {
     if (currentStep < totalSteps - 1) {
       setCurrentStep(prev => prev + 1);
     } else {
-      navigate("/results", { state: formData });
+      // Save to database before navigating to results
+      setIsSubmitting(true);
+      try {
+        const { error } = await supabase.from("pilates_leads").insert({
+          name: formData.name,
+          phone: formData.phone,
+          current_weight: Number(formData.currentWeight),
+          height: Number(formData.height),
+          goal_weight: Number(formData.goalWeight),
+          diet_preference: formData.dietPreference,
+        });
+
+        if (error) {
+          console.error("Error saving lead:", error);
+          toast({
+            title: "Error",
+            description: "Failed to save your information. Please try again.",
+            variant: "destructive",
+          });
+          return;
+        }
+
+        toast({
+          title: "Success! ✨",
+          description: "Your personalized plan is ready!",
+        });
+
+        navigate("/results", { state: formData });
+      } catch (err) {
+        console.error("Unexpected error:", err);
+        toast({
+          title: "Error",
+          description: "Something went wrong. Please try again.",
+          variant: "destructive",
+        });
+      } finally {
+        setIsSubmitting(false);
+      }
     }
   };
 
@@ -191,11 +232,15 @@ const Index = () => {
           
           <Button
             onClick={handleNext}
-            disabled={!canProceed()}
+            disabled={!canProceed() || isSubmitting}
             className="ml-auto transition-smooth gradient-primary border-0"
             size="lg"
           >
-            {currentStep === totalSteps - 1 ? "Generate My Plan ✨" : "Continue"}
+            {isSubmitting 
+              ? "Saving..." 
+              : currentStep === totalSteps - 1 
+                ? "Generate My Plan ✨" 
+                : "Continue"}
           </Button>
         </div>
       </Card>
