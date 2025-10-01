@@ -23,334 +23,334 @@ export const generatePilatesPlan = (data: FormData): {
   const days: DayPlan[] = [
     {
       day: 1,
-      focus: "Core Foundation",
-      duration: "25 minutes",
-      warmup: ["Cat-Cow stretches (2 min)", "Pelvic tilts (2 min)", "Gentle spinal twists (2 min)"],
+      focus: "Core Temeli",
+      duration: "25 dakika",
+      warmup: ["Kedi-İnek gerinimleri (2 dk)", "Pelvik eğimler (2 dk)", "Hafif omurga bükülmeleri (2 dk)"],
       exercises: [
         {
-          name: "The Hundred",
-          reps: "10 breaths",
-          description: "Lie on back, lift head and legs, pump arms while breathing"
+          name: "Yüzlük",
+          reps: "10 nefes",
+          description: "Sırt üstü yatın, baş ve bacakları kaldırın, nefes alırken kolları pompalayın"
         },
         {
-          name: "Single Leg Stretch",
-          reps: "10 each side",
-          description: "Alternate pulling knees to chest while extending opposite leg"
+          name: "Tek Bacak Germe",
+          reps: "Her yana 10",
+          description: "Dizleri göğse çekerken karşı bacağı uzatın"
         },
         {
-          name: "Plank Hold",
-          reps: "3 sets of 30 seconds",
-          description: "Hold forearm plank with engaged core"
+          name: "Plank Tutma",
+          reps: "30 saniye 3 set",
+          description: "Core kaslarınızı sıkarak dirsek plank pozisyonunda tutun"
         },
         {
-          name: "Bridge",
-          reps: "15 reps",
-          description: "Lift hips while squeezing glutes, hold for 2 seconds"
+          name: "Köprü",
+          reps: "15 tekrar",
+          description: "Kalçaları sıkarak 2 saniye tutarak kaldırın"
         }
       ],
-      cooldown: ["Child's pose (2 min)", "Spinal twist (1 min each side)", "Deep breathing (2 min)"]
+      cooldown: ["Çocuk pozu (2 dk)", "Omurga bükülmeleri (her yana 1 dk)", "Derin nefes (2 dk)"]
     },
     {
       day: 2,
-      focus: "Flexibility & Flow",
-      duration: "30 minutes",
-      warmup: ["Neck rolls (1 min)", "Shoulder circles (2 min)", "Side bends (2 min)"],
+      focus: "Esneklik & Akış",
+      duration: "30 dakika",
+      warmup: ["Boyun hareketleri (1 dk)", "Omuz çemberleri (2 dk)", "Yan eğilmeler (2 dk)"],
       exercises: [
         {
-          name: "Rolling Like a Ball",
-          reps: "12 reps",
-          description: "Balance on tailbone, roll back and return to balance"
+          name: "Top Gibi Yuvarlanma",
+          reps: "12 tekrar",
+          description: "Kuyruk sokumunuzda dengede durarak geriye yuvarlanın ve geri gelin"
         },
         {
-          name: "Spine Stretch Forward",
-          reps: "10 reps",
-          description: "Sit tall and reach forward, articulating through spine"
+          name: "Omurga İleriye Germe",
+          reps: "10 tekrar",
+          description: "Dik oturun ve omurga boyunca hareket ederek öne uzanın"
         },
         {
-          name: "Saw",
-          reps: "8 each side",
-          description: "Twist torso and reach across to opposite foot"
+          name: "Testere",
+          reps: "Her yana 8",
+          description: "Gövdeyi döndürün ve karşı ayağa uzanın"
         },
         {
-          name: "Mermaid Stretch",
-          reps: "6 each side",
-          description: "Side bends with arm reaching overhead"
+          name: "Deniz Kızı Germe",
+          reps: "Her yana 6",
+          description: "Kol başın üstünde uzanırken yan eğilme"
         },
         {
-          name: "Swan Dive Prep",
-          reps: "10 reps",
-          description: "Lie prone, lift chest using back muscles"
+          name: "Kuğu Dalışı Hazırlık",
+          reps: "10 tekrar",
+          description: "Yüz üstü yatın, sırt kaslarını kullanarak göğsü kaldırın"
         }
       ],
-      cooldown: ["Figure-4 stretch (2 min each side)", "Seated forward fold (3 min)"]
+      cooldown: ["4 figürü germe (her yana 2 dk)", "Oturarak öne eğilme (3 dk)"]
     },
     {
       day: 3,
-      focus: "Posture & Alignment",
-      duration: "35 minutes",
-      warmup: ["Wall slides (2 min)", "Arm circles (2 min)", "Hip circles (2 min)"],
+      focus: "Duruş & Hizalama",
+      duration: "35 dakika",
+      warmup: ["Duvara yaslanarak kayma (2 dk)", "Kol çemberleri (2 dk)", "Kalça çemberleri (2 dk)"],
       exercises: [
         {
-          name: "Shoulder Bridge",
-          reps: "12 reps",
-          description: "Articulate spine up and down, one vertebra at a time"
+          name: "Omuz Köprüsü",
+          reps: "12 tekrar",
+          description: "Omurgayı yukarı ve aşağı, her seferinde bir omur hareket ettirerek"
         },
         {
-          name: "Chest Lift with Rotation",
-          reps: "10 each side",
-          description: "Crunch up and twist to each side alternately"
+          name: "Göğüs Kaldırma ve Dönüş",
+          reps: "Her yana 10",
+          description: "Mekik çekerken her yana dönün"
         },
         {
-          name: "Side Plank",
-          reps: "30 sec each side, 2 sets",
-          description: "Hold side plank on forearm with stacked feet"
+          name: "Yan Plank",
+          reps: "Her yana 30 sn, 2 set",
+          description: "Dirsek üzerinde yan plank, ayaklar üst üste"
         },
         {
-          name: "Swimming",
-          reps: "20 counts",
-          description: "Lie prone, alternate lifting opposite arm and leg"
+          name: "Yüzme",
+          reps: "20 sayım",
+          description: "Yüz üstü yatın, karşı kol ve bacağı kaldırarak değiştirin"
         },
         {
-          name: "Leg Pull Front",
-          reps: "8 reps",
-          description: "From plank, lift one leg at a time while maintaining alignment"
+          name: "Bacak Çekme Ön",
+          reps: "8 tekrar",
+          description: "Plank pozisyonundan, hizalamayı koruyarak her seferinde bir bacak kaldırın"
         }
       ],
-      cooldown: ["Cat-cow (2 min)", "Thread the needle (2 min each side)", "Savasana (3 min)"]
+      cooldown: ["Kedi-inek (2 dk)", "İğneyi geçir (her yana 2 dk)", "Savasana (3 dk)"]
     },
     {
       day: 4,
-      focus: "Active Recovery",
-      duration: "20 minutes",
-      warmup: ["Gentle walking in place (2 min)", "Arm swings (2 min)", "Leg swings (2 min)"],
+      focus: "Aktif Toparlanma",
+      duration: "20 dakika",
+      warmup: ["Yerde hafif yürüme (2 dk)", "Kol sallamaları (2 dk)", "Bacak sallamaları (2 dk)"],
       exercises: [
         {
-          name: "Pelvic Curl",
-          reps: "15 slow reps",
-          description: "Gentle bridge with focus on articulation"
+          name: "Pelvik Kıvrım",
+          reps: "15 yavaş tekrar",
+          description: "Eklemleşmeye odaklanarak hafif köprü"
         },
         {
-          name: "Leg Circles",
-          reps: "8 each direction, both legs",
-          description: "Lie on back, draw circles with extended leg"
+          name: "Bacak Çemberleri",
+          reps: "Her yön 8, iki bacak",
+          description: "Sırt üstü yatın, uzatılmış bacakla çemberler çizin"
         },
         {
-          name: "Seated Twist",
-          reps: "10 each side",
-          description: "Sit tall and rotate torso from center"
+          name: "Oturarak Dönüş",
+          reps: "Her yana 10",
+          description: "Dik oturun ve gövdeyi merkezden döndürün"
         },
         {
-          name: "Modified Side Kicks",
-          reps: "12 each leg",
-          description: "Lie on side, controlled front and back leg swings"
+          name: "Değiştirilmiş Yan Tekmeler",
+          reps: "Her bacak 12",
+          description: "Yan yatın, kontrollü öne ve arkaya bacak sallamaları"
         }
       ],
-      cooldown: ["Hip flexor stretch (2 min each side)", "Hamstring stretch (2 min each side)", "Relaxation (3 min)"]
+      cooldown: ["Kalça fleksör germe (her yana 2 dk)", "Hamstring germe (her yana 2 dk)", "Rahatlama (3 dk)"]
     },
     {
       day: 5,
-      focus: "Strength & Control",
-      duration: "40 minutes",
-      warmup: ["Dynamic stretching (3 min)", "Arm and leg reaches (2 min)", "Torso rotations (2 min)"],
+      focus: "Güç & Kontrol",
+      duration: "40 dakika",
+      warmup: ["Dinamik esneme (3 dk)", "Kol ve bacak uzatma (2 dk)", "Gövde dönüşleri (2 dk)"],
       exercises: [
         {
-          name: "Double Leg Stretch",
-          reps: "12 reps",
-          description: "Curl up, extend arms and legs, then pull back in"
+          name: "Çift Bacak Germe",
+          reps: "12 tekrar",
+          description: "Kıvrılın, kol ve bacakları uzatın, sonra geri çekin"
         },
         {
-          name: "Criss-Cross",
-          reps: "16 total (8 each side)",
-          description: "Bicycle crunches with rotation"
+          name: "Çapraz",
+          reps: "16 toplam (her yana 8)",
+          description: "Dönüşlü bisiklet mekikleri"
         },
         {
-          name: "Teaser Prep",
-          reps: "8 reps",
-          description: "Roll up to V-position with legs lifted"
+          name: "Teaser Hazırlık",
+          reps: "8 tekrar",
+          description: "Bacaklar kaldırılmış V pozisyonuna yuvarlanın"
         },
         {
-          name: "Side Leg Series",
-          reps: "10 each: lifts, circles, kicks per side",
-          description: "Lie on side, perform various leg movements"
+          name: "Yan Bacak Serisi",
+          reps: "Her yana: 10 kaldırma, çember, tekme",
+          description: "Yan yatın, çeşitli bacak hareketleri yapın"
         },
         {
-          name: "Push-Up to Pike",
-          reps: "10 reps",
-          description: "Push-up then lift hips to downward dog"
+          name: "Şınav-Pike",
+          reps: "10 tekrar",
+          description: "Şınav sonra kalçaları aşağı bakan köpek pozisyonuna kaldırın"
         }
       ],
-      cooldown: ["Pigeon pose (3 min each side)", "Seated spinal twist (2 min each side)", "Deep breathing (3 min)"]
+      cooldown: ["Güvercin pozu (her yana 3 dk)", "Oturarak omurga bükülmesi (her yana 2 dk)", "Derin nefes (3 dk)"]
     },
     {
       day: 6,
-      focus: "Balance & Stability",
-      duration: "35 minutes",
-      warmup: ["Balance exercises (3 min)", "Ankle circles (2 min)", "Toe taps (2 min)"],
+      focus: "Denge & Stabilite",
+      duration: "35 dakika",
+      warmup: ["Denge egzersizleri (3 dk)", "Ayak bileği çemberleri (2 dk)", "Ayak parmağı vuruşları (2 dk)"],
       exercises: [
         {
-          name: "Standing Leg Lift Series",
-          reps: "10 each direction, both legs",
-          description: "Stand on one leg, move other in all directions"
+          name: "Ayakta Bacak Kaldırma Serisi",
+          reps: "Her yön 10, iki bacak",
+          description: "Tek bacak üzerinde durun, diğerini tüm yönlere hareket ettirin"
         },
         {
-          name: "Tree Balance",
-          reps: "1 min each side, 2 sets",
-          description: "Stand on one leg with other foot on inner thigh"
+          name: "Ağaç Dengesi",
+          reps: "Her yana 1 dk, 2 set",
+          description: "Tek bacak üzerinde durun, diğer ayak iç uyluğa"
         },
         {
-          name: "Single Leg Bridge",
-          reps: "12 each leg",
-          description: "Bridge with one leg extended"
+          name: "Tek Bacak Köprüsü",
+          reps: "Her bacak 12",
+          description: "Bir bacak uzatılmış köprü"
         },
         {
-          name: "Bird Dog",
-          reps: "10 each side",
-          description: "On hands and knees, extend opposite arm and leg"
+          name: "Kuş Köpeği",
+          reps: "Her yana 10",
+          description: "El ve dizler üzerinde, karşı kol ve bacağı uzatın"
         },
         {
-          name: "Standing Roll Down",
-          reps: "8 reps",
-          description: "Roll down through spine to touch floor, roll back up"
+          name: "Ayakta Aşağı Yuvarlanma",
+          reps: "8 tekrar",
+          description: "Yere dokunmak için omurga boyunca aşağı yuvarlanın, geri yuvarlanın"
         }
       ],
-      cooldown: ["Standing forward fold (3 min)", "Quad stretch (2 min each side)", "Meditation (3 min)"]
+      cooldown: ["Ayakta öne eğilme (3 dk)", "Kuadriseps germe (her yana 2 dk)", "Meditasyon (3 dk)"]
     },
     {
       day: 7,
-      focus: "Full Body Integration",
-      duration: "40 minutes",
-      warmup: ["Sun salutation flow (5 min)", "Dynamic stretches (3 min)"],
+      focus: "Tüm Vücut Entegrasyonu",
+      duration: "40 dakika",
+      warmup: ["Güneş selamı akışı (5 dk)", "Dinamik esneme (3 dk)"],
       exercises: [
         {
-          name: "The Series of Five",
-          reps: "Single leg, double leg, scissors, lower lift, criss-cross - 10 each",
-          description: "Classic Pilates ab series"
+          name: "Beşli Seri",
+          reps: "Tek bacak, çift bacak, makas, alt kaldırma, çapraz - her biri 10",
+          description: "Klasik Pilates karın serisi"
         },
         {
-          name: "Full Teaser",
-          reps: "6 reps",
-          description: "Roll up to full V-position, arms reaching forward"
+          name: "Tam Teaser",
+          reps: "6 tekrar",
+          description: "Tam V pozisyonuna yuvarlanın, kollar öne uzanır"
         },
         {
-          name: "Plank to Down Dog Flow",
-          reps: "12 reps",
-          description: "Flow between plank and downward dog"
+          name: "Plank-Aşağı Köpek Akışı",
+          reps: "12 tekrar",
+          description: "Plank ve aşağı bakan köpek arasında akış"
         },
         {
-          name: "Side Plank with Leg Lift",
-          reps: "8 each side",
-          description: "Hold side plank and lift top leg"
+          name: "Bacak Kaldırmalı Yan Plank",
+          reps: "Her yana 8",
+          description: "Yan plank tutun ve üst bacağı kaldırın"
         },
         {
-          name: "Seal",
-          reps: "10 reps",
-          description: "Roll like a ball with legs in diamond shape, clap feet"
+          name: "Fok",
+          reps: "10 tekrar",
+          description: "Bacaklar elmas şeklinde top gibi yuvarlanın, ayakları çırpın"
         }
       ],
-      cooldown: ["Full body stretch sequence (5 min)", "Supported bridge (3 min)", "Final relaxation (5 min)"]
+      cooldown: ["Tam vücut germe dizisi (5 dk)", "Destekli köprü (3 dk)", "Son rahatlama (5 dk)"]
     }
   ];
 
   const nutritionTips: Record<string, string> = {
-    "Balanced": `Your balanced diet perfectly complements this Pilates plan. Focus on whole grains, lean proteins, colorful vegetables, and healthy fats. Stay hydrated and eat regular meals to fuel your workouts and support ${weightGoal === "loss" ? "healthy weight loss" : "muscle building"}.`,
-    "Vegetarian": `Your vegetarian diet aligns beautifully with Pilates' mind-body philosophy. Ensure adequate protein through legumes, tofu, tempeh, and quinoa. Include iron-rich foods like spinach and pair with vitamin C for better absorption. These nutrients support muscle recovery and energy for your daily practice.`,
-    "Vegan": `Your plant-based approach supports both your Pilates practice and overall wellness. Prioritize complete proteins (quinoa, soy, hemp seeds), B12 supplementation, and omega-3s from flaxseed or algae. These nutrients enhance muscle repair and maintain energy throughout your 7-day journey.`,
-    "Keto": `Your low-carb, high-fat diet can fuel your Pilates practice effectively. Ensure electrolyte balance (sodium, potassium, magnesium) especially important for muscle function. Include quality fats like avocado, nuts, and olive oil. Stay well-hydrated to support flexibility and prevent cramping during exercises.`,
-    "Mediterranean": `The Mediterranean diet is ideal for Pilates practitioners! Rich in anti-inflammatory foods, omega-3s from fish, and abundant vegetables, it supports muscle recovery and joint health. Olive oil and nuts provide sustained energy for your workouts while promoting flexibility and strength.`,
-    "High-Protein": `Your high-protein focus perfectly supports the strength-building aspects of this Pilates plan. Spread protein intake throughout the day for optimal muscle repair and growth. Include lean meats, fish, eggs, and Greek yogurt. The enhanced protein supports ${weightGoal === "loss" ? "fat loss while preserving muscle" : "muscle development and strength gains"}.`,
-    "Other": `Whatever your dietary approach, ensure you're getting balanced nutrition to support your Pilates practice. Focus on adequate protein for muscle recovery, complex carbs for energy, and healthy fats for hormone balance. Stay hydrated and listen to your body's hunger cues to fuel your transformation journey.`
+    "Dengeli": `Dengeli beslenme programınız bu Pilates planını mükemmel tamamlıyor. Tam tahıllar, yağsız proteinler, renkli sebzeler ve sağlıklı yağlara odaklanın. Bol su için ve egzersizlerinizi desteklemek için düzenli öğünler tüketin. Bu ${weightGoal === "loss" ? "sağlıklı kilo kaybını" : "kas gelişimini"} destekler.`,
+    "Vejetaryen": `Vejetaryen diyetiniz Pilates'in beden-zihin felsefesiyle güzelce uyumlu. Baklagiller, tofu, tempeh ve kinoa ile yeterli protein alımını sağlayın. Ispanak gibi demir açısından zengin besinler dahil edin ve C vitamini ile emilimi artırın. Bu besinler kas iyileşmesini ve günlük pratiğiniz için enerjiyi destekler.`,
+    "Vegan": `Bitki bazlı yaklaşımınız hem Pilates pratiğinizi hem de genel sağlığınızı destekler. Tam proteinlere (kinoa, soya, kenevir tohumu) öncelik verin, B12 desteği alın ve keten tohumu veya alglerden omega-3 alın. Bu besinler kas onarımını geliştirir ve 7 günlük yolculuğunuz boyunca enerjiyi korur.`,
+    "Keto": `Düşük karbonhidratlı, yüksek yağlı diyetiniz Pilates pratiğinizi etkili şekilde destekleyebilir. Özellikle kas fonksiyonu için önemli olan elektrolit dengesini (sodyum, potasyum, magnezyum) sağlayın. Avokado, kuruyemiş ve zeytinyağı gibi kaliteli yağlar dahil edin. Egzersizler sırasında esnekliği desteklemek ve kramp önlemek için bol su için.`,
+    "Akdeniz": `Akdeniz diyeti Pilates uygulayıcıları için ideal! Anti-inflamatuar besinler, balıktan omega-3'ler ve bol sebze ile zengin, kas iyileşmesini ve eklem sağlığını destekler. Zeytinyağı ve kuruyemişler egzersizleriniz için sürekli enerji sağlarken esneklik ve gücü artırır.`,
+    "Yüksek Protein": `Yüksek protein odaklı yaklaşımınız bu Pilates planının güç geliştirme yönlerini mükemmel destekler. Protein alımını optimum kas onarımı ve büyümesi için gün boyunca yayın. Yağsız etler, balık, yumurta ve Yunan yoğurdu dahil edin. Artırılmış protein ${weightGoal === "loss" ? "kas koruyarak yağ kaybını" : "kas gelişimini ve güç kazanımlarını"} destekler.`,
+    "Diğer": `Beslenme yaklaşımınız ne olursa olsun, Pilates pratiğinizi desteklemek için dengeli beslenme aldığınızdan emin olun. Kas iyileşmesi için yeterli protein, enerji için kompleks karbonhidratlar ve hormon dengesi için sağlıklı yağlara odaklanın. Dönüşüm yolculuğunuzu desteklemek için bol su için ve vücudunuzun açlık sinyallerini dinleyin.`
   };
 
   const groceryLists: Record<string, string[]> = {
-    "Balanced": [
-      "Chicken breast or fish",
-      "Brown rice & quinoa",
-      "Sweet potatoes",
-      "Mixed vegetables (broccoli, spinach, bell peppers)",
-      "Eggs",
-      "Greek yogurt",
-      "Berries & bananas",
-      "Almonds & walnuts",
-      "Olive oil",
-      "Avocado"
+    "Dengeli": [
+      "Tavuk göğsü veya balık",
+      "Esmer pirinç ve kinoa",
+      "Tatlı patates",
+      "Karışık sebzeler (brokoli, ıspanak, biber)",
+      "Yumurta",
+      "Yunan yoğurdu",
+      "Çilek ve muz",
+      "Badem ve ceviz",
+      "Zeytinyağı",
+      "Avokado"
     ],
-    "Vegetarian": [
-      "Tofu & tempeh",
-      "Lentils & chickpeas",
-      "Quinoa & whole grain pasta",
-      "Mixed leafy greens",
-      "Eggs & Greek yogurt",
-      "Berries & citrus fruits",
-      "Nuts & seeds",
-      "Nutritional yeast",
-      "Olive oil",
-      "Sweet potatoes"
+    "Vejetaryen": [
+      "Tofu ve tempeh",
+      "Mercimek ve nohut",
+      "Kinoa ve tam buğday makarna",
+      "Karışık yeşil yapraklılar",
+      "Yumurta ve Yunan yoğurdu",
+      "Çilek ve narenciye",
+      "Kuruyemiş ve tohumlar",
+      "Besin mayası",
+      "Zeytinyağı",
+      "Tatlı patates"
     ],
     "Vegan": [
-      "Tofu, tempeh & edamame",
-      "Black beans & lentils",
-      "Quinoa & oats",
-      "Leafy greens & cruciferous vegetables",
-      "Berries & bananas",
-      "Chia seeds & flaxseeds",
-      "Almond butter",
-      "Plant milk (fortified)",
-      "Nutritional yeast",
-      "B12 supplement"
+      "Tofu, tempeh ve edamame",
+      "Kuru fasulye ve mercimek",
+      "Kinoa ve yulaf",
+      "Yeşil yapraklılar ve haşhaşlı sebzeler",
+      "Çilek ve muz",
+      "Chia tohumu ve keten tohumu",
+      "Badem ezmesi",
+      "Bitki sütü (zenginleştirilmiş)",
+      "Besin mayası",
+      "B12 takviyesi"
     ],
     "Keto": [
-      "Chicken, fish & beef",
-      "Eggs (lots)",
-      "Cheese & full-fat dairy",
-      "Avocados",
-      "Leafy greens (spinach, kale)",
-      "Broccoli & cauliflower",
-      "Olive oil & coconut oil",
-      "Nuts (macadamia, pecans)",
-      "Electrolyte supplements",
-      "Berries (limited)"
+      "Tavuk, balık ve dana eti",
+      "Yumurta (bol)",
+      "Peynir ve tam yağlı süt ürünleri",
+      "Avokado",
+      "Yeşil yapraklılar (ıspanak, lahana)",
+      "Brokoli ve karnabahar",
+      "Zeytinyağı ve hindistan cevizi yağı",
+      "Kuruyemiş (makadamya, pekan)",
+      "Elektrolit takviyeleri",
+      "Çilek (sınırlı)"
     ],
-    "Mediterranean": [
-      "Salmon & sardines",
-      "Olive oil (extra virgin)",
-      "Whole grain bread",
-      "Chickpeas & lentils",
-      "Tomatoes & cucumbers",
-      "Leafy greens",
-      "Feta cheese",
-      "Olives",
-      "Nuts & seeds",
-      "Fresh herbs (basil, oregano)"
+    "Akdeniz": [
+      "Somon ve sardalya",
+      "Zeytinyağı (sızma)",
+      "Tam buğday ekmek",
+      "Nohut ve mercimek",
+      "Domates ve salatalık",
+      "Yeşil yapraklılar",
+      "Beyaz peynir",
+      "Zeytin",
+      "Kuruyemiş ve tohumlar",
+      "Taze otlar (fesleğen, kekik)"
     ],
-    "High-Protein": [
-      "Chicken breast & turkey",
-      "Salmon & tuna",
-      "Eggs & egg whites",
-      "Greek yogurt & cottage cheese",
-      "Protein powder",
-      "Lean beef",
-      "Quinoa",
+    "Yüksek Protein": [
+      "Tavuk göğsü ve hindi",
+      "Somon ve ton balığı",
+      "Yumurta ve yumurta beyazları",
+      "Yunan yoğurdu ve lor peyniri",
+      "Protein tozu",
+      "Yağsız dana eti",
+      "Kinoa",
       "Edamame",
-      "Mixed vegetables",
-      "Berries"
+      "Karışık sebzeler",
+      "Çilek"
     ],
-    "Other": [
-      "Lean proteins (choose your preference)",
-      "Whole grains",
-      "Variety of vegetables",
-      "Fresh fruits",
-      "Healthy fats (nuts, olive oil)",
-      "Greek yogurt or alternative",
-      "Eggs or substitute",
-      "Beans & legumes",
-      "Herbs & spices",
-      "Plenty of water"
+    "Diğer": [
+      "Yağsız proteinler (tercihinize göre)",
+      "Tam tahıllar",
+      "Çeşitli sebzeler",
+      "Taze meyveler",
+      "Sağlıklı yağlar (kuruyemiş, zeytinyağı)",
+      "Yunan yoğurdu veya alternatifi",
+      "Yumurta veya ikamesi",
+      "Baklagiller",
+      "Baharat ve otlar",
+      "Bol su"
     ]
   };
 
   return {
     days,
-    nutritionTip: nutritionTips[data.dietPreference] || nutritionTips["Other"],
-    groceryList: groceryLists[data.dietPreference] || groceryLists["Other"]
+    nutritionTip: nutritionTips[data.dietPreference] || nutritionTips["Diğer"],
+    groceryList: groceryLists[data.dietPreference] || groceryLists["Diğer"]
   };
 };

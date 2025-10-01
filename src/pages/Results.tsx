@@ -22,16 +22,16 @@ const Results = () => {
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12 animate-in fade-in slide-in-from-top duration-700">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            ✨ Your Free 7-Day At-Home Pilates Plan
+            ✨ Ücretsiz 7 Günlük Evde Pilates Programınız
           </h1>
           <p className="text-xl text-muted-foreground">
-            Personalized for {formData.name}
+            {formData.name} için özelleştirildi
           </p>
         </div>
 
         {/* Daily Workouts */}
         <div className="mb-12 space-y-6">
-          <h2 className="text-3xl font-bold mb-6">Your Week of Transformation</h2>
+          <h2 className="text-3xl font-bold mb-6">Dönüşüm Haftanız</h2>
           {days.map((day, index) => (
             <Card
               key={day.day}
@@ -41,7 +41,7 @@ const Results = () => {
               <div className="flex items-start justify-between mb-4">
                 <div>
                   <h3 className="text-2xl font-bold text-primary mb-1">
-                    Day {day.day}: {day.focus}
+                    Gün {day.day}: {day.focus}
                   </h3>
                   <p className="text-muted-foreground">{day.duration}</p>
                 </div>
@@ -49,7 +49,7 @@ const Results = () => {
 
               <div className="space-y-4">
                 <div>
-                  <h4 className="font-semibold text-secondary mb-2">Warm-Up</h4>
+                  <h4 className="font-semibold text-secondary mb-2">Isınma</h4>
                   <ul className="list-disc list-inside space-y-1 text-sm">
                     {day.warmup.map((item, i) => (
                       <li key={i} className="text-foreground/80">{item}</li>
@@ -60,7 +60,7 @@ const Results = () => {
                 <Separator />
 
                 <div>
-                  <h4 className="font-semibold text-primary mb-3">Main Exercises</h4>
+                  <h4 className="font-semibold text-primary mb-3">Ana Egzersizler</h4>
                   <div className="space-y-3">
                     {day.exercises.map((exercise, i) => (
                       <div key={i} className="pl-4 border-l-2 border-primary/30">
@@ -75,7 +75,7 @@ const Results = () => {
                 <Separator />
 
                 <div>
-                  <h4 className="font-semibold text-accent mb-2">Cool Down</h4>
+                  <h4 className="font-semibold text-accent mb-2">Soğuma</h4>
                   <ul className="list-disc list-inside space-y-1 text-sm">
                     {day.cooldown.map((item, i) => (
                       <li key={i} className="text-foreground/80">{item}</li>
@@ -90,7 +90,7 @@ const Results = () => {
         {/* Nutrition Tip */}
         <Card className="p-6 mb-8 shadow-medium gradient-secondary animate-in fade-in slide-in-from-left duration-700">
           <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
-            🥗 Nutrition Alignment for Your {formData.dietPreference} Diet
+            🥗 {formData.dietPreference} Beslenme Programınıza Uygun Öneriler
           </h2>
           <p className="text-foreground/90 leading-relaxed">{nutritionTip}</p>
         </Card>
@@ -98,7 +98,7 @@ const Results = () => {
         {/* Grocery List */}
         <Card className="p-6 mb-8 shadow-medium animate-in fade-in slide-in-from-right duration-700">
           <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
-            🛒 Your Weekly Grocery List
+            🛒 Haftalık Alışveriş Listeniz
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
             {groceryList.map((item, i) => (
@@ -113,12 +113,12 @@ const Results = () => {
         {/* CTA */}
         <Card className="p-8 shadow-medium gradient-accent text-white text-center animate-in fade-in zoom-in duration-700">
           <h2 className="text-2xl font-bold mb-4">
-            👉 {formData.name}, this 1-week plan is just the beginning!
+            👉 {formData.name}, bu 1 haftalık program sadece başlangıç!
           </h2>
           <p className="text-lg mb-6 text-white/90">
-            Want a fully customized Pilates + nutrition plan designed specifically for your goals?
+            Hedeflerinize özel tasarlanmış tam Pilates + beslenme programı ister misiniz?
             <br />
-            We'll reach out to you at <span className="font-semibold">{formData.phone}</span>
+            Sizi <span className="font-semibold">{formData.phone}</span> numarasından arayacağız
           </p>
           <Button
             size="lg"
@@ -126,7 +126,7 @@ const Results = () => {
             onClick={() => navigate("/")}
             className="font-semibold"
           >
-            Create Another Plan
+            Başka Bir Program Oluştur
           </Button>
         </Card>
       </div>

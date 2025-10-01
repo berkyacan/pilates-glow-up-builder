@@ -8,11 +8,11 @@ export interface FormData {
 }
 
 export const dietOptions = [
-  "Balanced",
-  "Vegetarian",
+  "Dengeli",
+  "Vejetaryen",
   "Vegan",
   "Keto",
-  "Mediterranean",
-  "High-Protein",
-  "Other"
+  "Akdeniz",
+  "Yüksek Protein",
+  "Diğer"
 ];

@@ -49,24 +49,24 @@ const Index = () => {
         if (error) {
           console.error("Error saving lead:", error);
           toast({
-            title: "Error",
-            description: "Failed to save your information. Please try again.",
+            title: "Hata",
+            description: "Bilgileriniz kaydedilemedi. Lütfen tekrar deneyin.",
             variant: "destructive",
           });
           return;
         }
 
         toast({
-          title: "Success! ✨",
-          description: "Your personalized plan is ready!",
+          title: "Başarılı! ✨",
+          description: "Kişiselleştirilmiş programınız hazır!",
         });
 
         navigate("/results", { state: formData });
       } catch (err) {
         console.error("Unexpected error:", err);
         toast({
-          title: "Error",
-          description: "Something went wrong. Please try again.",
+          title: "Hata",
+          description: "Bir şeyler ters gitti. Lütfen tekrar deneyin.",
           variant: "destructive",
         });
       } finally {
@@ -98,11 +98,11 @@ const Index = () => {
       case 0:
         return (
           <FormStep>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">What's your name?</h2>
-            <p className="text-muted-foreground mb-6">Let's personalize your Pilates journey</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Adınız nedir?</h2>
+            <p className="text-muted-foreground mb-6">Pilates yolculuğunuzu kişiselleştirelim</p>
             <Input
               type="text"
-              placeholder="Enter your name"
+              placeholder="Adınızı girin"
               value={formData.name}
               onChange={(e) => updateFormData("name", e.target.value)}
               className="text-lg p-6"
@@ -116,12 +116,12 @@ const Index = () => {
         return (
           <FormStep>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Great, {formData.name}! What's your phone number?
+              Harika {formData.name}! Telefon numaranız nedir?
             </h2>
-            <p className="text-muted-foreground mb-6">So we can send you personalized tips</p>
+            <p className="text-muted-foreground mb-6">Size kişiselleştirilmiş ipuçları gönderebilmemiz için</p>
             <Input
               type="tel"
-              placeholder="(555) 123-4567"
+              placeholder="0555 123 4567"
               value={formData.phone}
               onChange={(e) => updateFormData("phone", e.target.value)}
               className="text-lg p-6"
@@ -134,11 +134,11 @@ const Index = () => {
       case 2:
         return (
           <FormStep>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">What's your current weight?</h2>
-            <p className="text-muted-foreground mb-6">In pounds (lbs)</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Mevcut kilonuz kaç?</h2>
+            <p className="text-muted-foreground mb-6">Kilogram (kg) cinsinden</p>
             <Input
               type="number"
-              placeholder="150"
+              placeholder="70"
               value={formData.currentWeight}
               onChange={(e) => updateFormData("currentWeight", e.target.value)}
               className="text-lg p-6"
@@ -151,11 +151,11 @@ const Index = () => {
       case 3:
         return (
           <FormStep>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">How tall are you?</h2>
-            <p className="text-muted-foreground mb-6">In inches (e.g., 5'6" = 66 inches)</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Boyunuz kaç?</h2>
+            <p className="text-muted-foreground mb-6">Santimetre (cm) cinsinden</p>
             <Input
               type="number"
-              placeholder="66"
+              placeholder="170"
               value={formData.height}
               onChange={(e) => updateFormData("height", e.target.value)}
               className="text-lg p-6"
@@ -168,11 +168,11 @@ const Index = () => {
       case 4:
         return (
           <FormStep>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">What's your goal weight?</h2>
-            <p className="text-muted-foreground mb-6">In pounds (lbs)</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Hedef kilonuz kaç?</h2>
+            <p className="text-muted-foreground mb-6">Kilogram (kg) cinsinden</p>
             <Input
               type="number"
-              placeholder="140"
+              placeholder="65"
               value={formData.goalWeight}
               onChange={(e) => updateFormData("goalWeight", e.target.value)}
               className="text-lg p-6"
@@ -185,8 +185,8 @@ const Index = () => {
       case 5:
         return (
           <FormStep>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">What's your diet preference?</h2>
-            <p className="text-muted-foreground mb-6">We'll tailor nutrition tips to match</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Diyet tercihiniz nedir?</h2>
+            <p className="text-muted-foreground mb-6">Beslenme ipuçlarını buna göre özelleştireceğiz</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
               {dietOptions.map((diet) => (
                 <Button
@@ -226,7 +226,7 @@ const Index = () => {
               onClick={handleBack}
               className="transition-smooth"
             >
-              Back
+              Geri
             </Button>
           )}
           
@@ -237,10 +237,10 @@ const Index = () => {
             size="lg"
           >
             {isSubmitting 
-              ? "Saving..." 
+              ? "Kaydediliyor..." 
               : currentStep === totalSteps - 1 
-                ? "Generate My Plan ✨" 
-                : "Continue"}
+                ? "Programımı Oluştur ✨" 
+                : "Devam"}
           </Button>
         </div>
       </Card>
